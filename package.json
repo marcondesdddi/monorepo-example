@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "lint:fix": "pnpm lint --fix",
     "format": "prettier .",
-    "format:fix": "pnpm run format --write"
+    "format:fix": "pnpm run format --write",
+    "prepare": "husky install"
   },
   "keywords": [],
   "author": "",
@@ -22,5 +23,10 @@
     "prettier": "^2.8.8",
     "rimraf": "^5.0.1",
     "typescript": "^5.1.3"
+  },
+  "devDependencies": {
+    "git-commit-msg-linter": "^5.0.4",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2"
   }
 }
