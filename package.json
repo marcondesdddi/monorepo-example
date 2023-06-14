@@ -5,12 +5,18 @@
   "scripts": {
     "clear:packages": "rimraf packages/**/node_modules && rimraf packages/**/dist && rimraf packages/**/package-lock.json && rimraf packages/**/*.tsbuildinfo",
     "install:packages": "pnpm -r install",
-    "build:packages": "pnpm --stream -r run build"
+    "build:packages": "pnpm --stream -r run build",
+    "lint": "eslint .",
+    "lint:fix": "pnpm lint --fix"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "rimraf": "^5.0.1"
+    "@monorepo/eslint-config-node": "workspace: *",
+    "eslint": "^8.42.0",
+    "@types/node": "^20.3.0",
+    "rimraf": "^5.0.1",
+    "typescript": "^5.1.3"
   }
 }
