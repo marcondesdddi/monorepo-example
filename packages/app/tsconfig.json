@@ -4,6 +4,10 @@
     "src/**/*"
   ],
   "compilerOptions": {
-    //"module": "commonjs"
+    "rootDirs": ["src"],
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    }
   }
 }
