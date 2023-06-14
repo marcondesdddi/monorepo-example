@@ -1,0 +1,16 @@
+{
+  "name": "monorepo-vistoria",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "clear:packages": "rimraf packages/**/node_modules && rimraf packages/**/dist && rimraf packages/**/package-lock.json && rimraf packages/**/*.tsbuildinfo",
+    "install:packages": "pnpm -r install",
+    "build:packages": "pnpm --stream -r run build"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "rimraf": "^5.0.1"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "extends": "@monorepo/common/tsconfig.base.json",
+  "include": [
+    "src/**/*"
+  ],
+  "compilerOptions": {
+    //"module": "commonjs"
+  }
+}
