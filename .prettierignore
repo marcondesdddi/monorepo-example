@@ -1,0 +1,9 @@
+build
+dist
+coverage
+**/.git
+**/.svn
+**/.hg
+**/node_modules
+**/package.json
+pnpm-lock.yaml

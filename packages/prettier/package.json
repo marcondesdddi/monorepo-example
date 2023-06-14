@@ -1,21 +1,18 @@
 {
-  "name": "@monorepo/eslint-config",
+  "name": "@monorepo/prettier",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint .",
-    "lint:fix": "pnpm run lint --fix"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "eslint": "^8.42.0",
     "prettier": "^2.8.8"
   },
   "devDependencies": {
-    "eslint-config-prettier": "^8.8.0",
-    "eslint-plugin-prettier": "^4.2.1"
+    "@types/prettier": "^2.7.3"
   }
 }

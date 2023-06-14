@@ -1,8 +1,6 @@
 {
   "extends": "@monorepo/common/tsconfig.base.json",
-  "include": [
-    "src/**/*"
-  ],
+  "include": ["src/**/*"],
   "compilerOptions": {
     "rootDirs": ["src"],
     "baseUrl": "src",
