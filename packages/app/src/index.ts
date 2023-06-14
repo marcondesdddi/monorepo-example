@@ -1,13 +1,13 @@
-import { app } from "@/main/config";
+import { app } from "@/main/config"
 
 try {
-  const appPort = 3000;
+  const appPort = 3000
 
   app.get("/", (req, res) => {
-    res.send("Hello World!");
-  });
+    res.send("Hello World!")
+  })
 
-  app.listen({ port: appPort }, () => console.log(`API running http://localhost:${appPort}`));
+  app.listen({ port: appPort }, () => console.log(`API running http://localhost:${appPort}`))
 } catch (e) {
-  console.error(e);
+  console.error(e)
 }

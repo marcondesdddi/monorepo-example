@@ -1,1 +1,1 @@
-module.exports = require("@monorepo/prettier");
+module.exports = require("@monorepo/prettier")

@@ -1,1 +1,1 @@
-export const showMessage = () => console.log("Eu sou um módulo");
+export const showMessage = () => console.log("Eu sou um módulo")

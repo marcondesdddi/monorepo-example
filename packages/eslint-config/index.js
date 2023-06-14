@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 module.exports = {
   extends: ["eslint:recommended", "prettier"],
   env: {
@@ -9,4 +10,4 @@ module.exports = {
     "no-console": 1,
     "prettier/prettier": 2
   }
-};
+}
