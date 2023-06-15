@@ -1,6 +1,6 @@
 /* eslint-disable prettier/prettier */
 module.exports = {
-  extends: ["eslint:recommended", "prettier"],
+  extends: ["eslint:recommended", "prettier", "plugin:@typescript-eslint/recommended"],
   env: {
     es6: true,
     node: true

@@ -7,7 +7,9 @@ try {
     res.send("Hello World!")
   })
 
-  app.listen({ port: appPort }, () => console.log(`API running http://localhost:${appPort}`))
+  app.listen({ port: appPort, host: "0.0.0.0" }, () =>
+    console.log(`API running http://localhost:${appPort}`)
+  )
 } catch (e) {
   console.error(e)
 }
