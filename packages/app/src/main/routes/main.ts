@@ -1,7 +1,7 @@
 import { FastifyInstance } from "fastify"
+import * as controller from "@/main/factories/application/controllers"
+import { adaptFastifyRoute } from "@/main/adapters/fastify-router"
 
 export default async function Main(app: FastifyInstance) {
-  app.get("/", async (request, reply) => {
-    return reply.send({ msg: "Hello World2!!" })
-  })
+  app.get("/", adaptFastifyRoute(controller.makeTestController()))
 }
