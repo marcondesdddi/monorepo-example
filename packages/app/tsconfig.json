@@ -1,11 +1,13 @@
 {
   "extends": "@monorepo/common/tsconfig.base.json",
-  "include": ["src/**/*"],
+  "include": ["src/**/*", "tests/**/*"],
   "compilerOptions": {
-    "rootDirs": ["src"],
+    "rootDirs": ["src", "tests"],
     "baseUrl": "src",
     "paths": {
-      "@/*": ["*"]
-    }
+      "@/*": ["*"],
+      "@/tests/*": ["../tests/*"]
+    },
+    "types": ["vitest/globals"]
   }
 }
