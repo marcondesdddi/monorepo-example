@@ -10,5 +10,5 @@ export const setupMiddleware = (app: FastifyInstance): void => {
   app.register(helmet)
   app.register(healthCheck)
   app.register(formBody)
-  app.register(multipart)
+  app.register(multipart, { attachFieldsToBody: true })
 }
