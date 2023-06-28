@@ -11,7 +11,7 @@ export class TestController extends Controller {
   }
 
   async perform(request: HttpRequest): Promise<HttpResponse<Response>> {
-    console.log(request.file.name)
+    console.log(request?.file?.name)
     return ok({ msg: "Deu certo!!" })
   }
 

@@ -8,6 +8,7 @@
       "@/*": ["*"],
       "@/tests/*": ["../tests/*"]
     },
-    "types": ["vitest/globals"]
+    "types": ["vitest/globals"],
+    "esModuleInterop": true,
   }
 }

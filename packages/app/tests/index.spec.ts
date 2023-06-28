@@ -1,3 +1,5 @@
-test('basic', async () => {
-  expect((4 - 4)).toBe(0)
+import { test, expect } from 'vitest'
+
+test('vitest basic', async () => {
+  expect(1 + 1).toBe(2)
 })

@@ -1,9 +1,10 @@
 import { FastifyInstance } from "fastify"
-import Autoload from "@fastify/autoload"
+import autoload from "@fastify/autoload"
 import path from "path"
 
 export const setupRoutes = (app: FastifyInstance): void => {
-  app.register(Autoload, {
-    dir: path.join(__dirname, "../routes")
+  const pathRoutes = process.env.NODE_ENV === "dev" ? "../routes" : "main/routes"
+  app.register(autoload, {
+    dir: path.join(__dirname, pathRoutes)
   })
 }
