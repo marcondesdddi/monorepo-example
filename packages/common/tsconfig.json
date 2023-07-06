@@ -1,9 +1,10 @@
 {
   "extends": "./tsconfig.base.json",
-  "include": ["./src", "../app/src/domain/types/file.ts"],
+  "include": ["./src", "src/domain/types/file.ts"],
   "compilerOptions": {
     "module": "CommonJS",
     "target": "ES6",
+    "rootDir": "./src",
     "outDir": "./dist",
     "baseUrl": "src",
     "paths": {
