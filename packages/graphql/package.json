@@ -1,0 +1,31 @@
+{
+  "name": "@monorepo/graphql",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "generate": "graphql-codegen",
+    "build": "rm -rf dist && pnpm run generate && tsx esbuild.config.ts",
+    "start": "node dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@envelop/response-cache": "^5.1.0",
+    "cors": "^2.8.5",
+    "fastify": "^4.18.0",
+    "graphql": "^16.7.1",
+    "graphql-yoga": "^4.0.3"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "^4.0.1",
+    "@graphql-codegen/typescript": "^4.0.1",
+    "@graphql-codegen/typescript-resolvers": "^4.0.1",
+    "@types/cors": "^2.8.13",
+    "esbuild": "^0.18.1",
+    "esbuild-plugin-path-alias": "^1.0.7",
+    "tiny-glob": "^0.2.9",
+    "tsx": "^3.12.7"
+  }
+}
